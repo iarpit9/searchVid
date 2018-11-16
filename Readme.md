@@ -12,13 +12,10 @@ This is a simple tool to search for a video snippet inside a parent (or not) vid
 
 To generate a snippet of a larger video ffmpeg_extract_subclip can be used as follows:
 
-from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
+from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip 
 ffmpeg_extract_subclip("Input", t_start, t_end, targetname="OutputPath")
 
-However, without setting keyframes correctly, ffmpeg tends to give inacccurate results with certain frames at the start and at the end turning
-out to be black/empty. It is strongly advisable to check the trimmed output to make sure that this has not happened to your result, before using the 
-tool. 
-
+However, without setting keyframes correctly, ffmpeg tends to give inacccurate results with certain frames at the start and at the end turning out to be black/empty. It is strongly advisable to check the trimmed output to make sure that this has not happened to your result, before using the tool. 
 It may be preferable to use a simple video editing tool to trim a test video.
 
 Latest version of the following libraries have been used while testing the script:
